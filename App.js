@@ -16,40 +16,21 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import Registration2 from './screens/Registration2';
-import Registration1 from './screens/Registration1';
-import Login from './screens/Login';
-import Profile from './screens/Profile';
-// import Navigator from './routes/SignInStack';
+import Registration2 from './src/screens/Registration2';
+import Registration1 from './src/screens/Registration1';
+import Login from './src/screens/Login';
+import Profile from './src/screens/Profile';
 
-const App: () => React$Node = () => {
-  return (
-    <View style={styles.container}>
-    <Text style={styles.instructions}>Hello World!</Text>
-    <View>
-      {/* <Registration2/> */}
-      {/* <Registration1/> */}
-      {/* <Login/> */}
-      <Profile/>
-      
-      {/* <Navigator/> */}
-    </View>
-  </View> 
-  );
-};
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
-const styles = StyleSheet.create({
-  container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#F5FCFF'
-	},
-	instructions: {
-		textAlign: 'center',
-		color: '#333333',
-		marginBottom: 5
-	} 
+const MainNavigator = createStackNavigator({
+  Login: {screen: Login},
+  Registration1: {screen: Registration1},
+  Registration2: {screen: Registration2},
+  Profile: {screen: Profile}
 });
+
+const App = createAppContainer(MainNavigator);
 
 export default App;

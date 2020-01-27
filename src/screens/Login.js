@@ -11,11 +11,11 @@ export default class Login extends React.Component {
         const {navigate} = this.props.navigation;
     return (
             <ImageBackground 
-                source={require('../assets/BG.png')} 
+                source={require('../../assets/BG.png')} 
                 style={globalStyles.backgroud}>
             <View style={globalStyles.container}>
             <Image 
-                source={require('../assets/Logo_signin.png')} 
+                source={require('../../assets/Logo_signin.png')} 
                 style={styles.backgroudImage} />
             <Text style={styles.screenTitle}>Log in to {"\n"}your account</Text>
             

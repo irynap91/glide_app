@@ -42,11 +42,11 @@ export default class AddProfilePic extends Component {
     return (
       <View style={styles.addProfilePic}>
            <Image 
-                source={this.state.filePath == null ? require('../assets/Profile.png') : this.state.filePath} 
+                source={this.state.filePath == null ? require('../../assets/Profile.png') : this.state.filePath} 
                 style={styles.profile} />
             <TouchableOpacity onPress={this.chooseFile}>        
                 <Image 
-                source={require('../assets/Camera.png')} 
+                source={require('../../assets/Camera.png')} 
                 style={styles.addPic} 
                 />
             </TouchableOpacity>

@@ -6,7 +6,7 @@ export default class ProfilePic extends Component {
     return (
       <View style={styles.profile}>
           <Image 
-                source={require('../assets/Profile.png')} 
+                source={require('../../assets/Profile.png')} 
                 style={styles.picture}/>
             <Text style={styles.name}>Gleb Slavinskiy</Text>
             <Text style={styles.email}>slavinskiyg@icloud.com </Text>

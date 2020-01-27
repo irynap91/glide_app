@@ -13,11 +13,11 @@ export default function Registration2 ({navigation}) {
 
     return (
         <ImageBackground 
-            source={require('../assets/BG.png')} 
+            source={require('../../assets/BG.png')} 
             style={globalStyles.backgroud}>
         <View style={globalStyles.container}>
             <Image 
-                source={require('../assets/Logo_createAccount.png')} 
+                source={require('../../assets/Logo_createAccount.png')} 
                 style={styles.backgroudImage} />
             
             <View  style={globalStyles.inputContainer}>

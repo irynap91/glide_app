@@ -17,7 +17,7 @@ export default function Registration1 ({navigation}) {
 
     return (
         <ImageBackground 
-            source={require('../assets/BG.png')} 
+            source={require('../../assets/BG.png')} 
             style={globalStyles.backgroud}>
         <View style={globalStyles.container}>
             <AddProfilePic/>

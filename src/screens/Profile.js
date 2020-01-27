@@ -8,13 +8,13 @@ import ProfileStat from '../components/ProfileStat';
 export default Registration2 = () => {
     return (
         <ImageBackground 
-            source={require('../assets/BG_Profile.png')} 
+            source={require('../../assets/BG_Profile.png')} 
             style={globalStyles.backgroud}>
             <View style={globalStyles.container}>
                 <ProfilePic/>
                 <Image 
                     style={styles.level} 
-                    source={require('../assets/Level.png')}/>
+                    source={require('../../assets/Level.png')}/>
                 <DonutChart/>
                 <ProfileStat/>
             </View>
